@@ -77,7 +77,7 @@ instr 2
     aHarm poscil iAmp * 0.24, iFreq * 2.76, giSine
     aHigh poscil iAmp * 0.08, iFreq * 4.03, giSine
 
-    aSig = (aFund + aHarm + aHigh) * aEnv * gkVolume
+aSig = (aFund + aHarm + aHigh) * aEnv * gkVolume * 0.001
 
     aL, aR pan2 aSig, iPan
     outs aL, aR
