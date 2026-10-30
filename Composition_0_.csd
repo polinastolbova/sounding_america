@@ -29,8 +29,8 @@ gkMotion init 0.5
 instr 10
     kTime timeinsts
     kVolume chnget "volume"
-printks "CSOUND VOLUME = %f\\n", 0.5, kVolume
     gkVolume portk kVolume, 0.05
+printks "SMOOTHED VOLUME = %f\n", 0.5, gkVolume
 
     kWave oscili 0.5, 0.00065, giSine
     kWave = kWave + 0.5
