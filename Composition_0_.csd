@@ -18,6 +18,7 @@ giSine ftgen 1, 0, 16384, 10, 1
 ; ============================================
 
 gkVolume init 0.58
+chn_k "volume", 1
 gkDensity init 0.55
 gkBrightness init 0.5
 gkMotion init 0.5
@@ -27,6 +28,8 @@ gkMotion init 0.5
 ; --------------------------------------------
 instr 10
     kTime timeinsts
+    kVolume chnget "volume"
+    gkVolume portk kVolume, 0.05
 
     kWave oscili 0.5, 0.00065, giSine
     kWave = kWave + 0.5
