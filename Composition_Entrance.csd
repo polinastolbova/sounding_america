@@ -16,7 +16,7 @@ giSine ftgen 1, 0, 16384, 10, 1
 ; Flowing currents / generative soundscape
 ; ============================================
 
-gkVolume init 0.60
+gkVolume init 0.6
 gkMotion init 0.5
 gkDensity init 0.55
 gkBrightness init 0.5
