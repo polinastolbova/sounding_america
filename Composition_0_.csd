@@ -59,7 +59,7 @@ instr 1
     kPanLfo oscili 0.45, 0.011, giSine
     kPan = 0.5 + kPanLfo * gkMotion
 
-  aL, aR pan2 aTone * gkVolume * 0.1, kPan
+aL, aR pan2 aTone * 0.001, kPan
 outs aL, aR
 endin
 
